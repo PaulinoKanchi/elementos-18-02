@@ -8,6 +8,7 @@ import com.vaadin.ui.Label;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.themes.ValoTheme;
+import java.util.ArrayList;
 
 @SpringUI
 @Theme("valo")
@@ -33,5 +34,17 @@ public class MiUI extends UI{
     //Esto que sigue solo se hace una vez agregamos el layput a la pagina index
     setContent(layout);
     }
+    
+    ArrayList<Mensajitos> MEN = ArrayList(
+    new Mensajitos("Nicolaus Copernicus", "1543"),
+    new Mensajitos("Galileo Galilei", "1564"),
+    new Mensajitos("Johannes Kepler", "1"));
+
+// Create a grid bound to the list
+Grid<MEN> grid = new Grid<>();
+grid.setItems(Mensajitos);
+grid.addColumn(Mensajitos::getTitulo).setCaption("Name");
+grid.addColumn(Mensajitos::getCuerpo).setCaption("Year of birth");
+
     
 }
