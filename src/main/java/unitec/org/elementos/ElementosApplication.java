@@ -19,7 +19,7 @@ public class ElementosApplication implements CommandLineRunner{
 
     public void run(String... strings) throws Exception {
             //guardar
-        Mensajitos m=new Mensajitos ("tercero","Mi segundo menaJITO CON HIBERNATE");
+        //Mensajitos m=new Mensajitos ("tercero","Mi segundo menaJITO CON HIBERNATE");
         //repoMensa.save(m);
         
         //probamos el de buscar
@@ -33,8 +33,8 @@ public class ElementosApplication implements CommandLineRunner{
           //System.out.println(m1.getTitulo());
           
           //actualizacion
-          repoMensa.save(new Mensajitos(4,"cuarto","cuarto"));
+          //repoMensa.save(new Mensajitos(4,"cuarto","cuarto"));
           //borrar
           //repoMensa.delete(4);
-    }
+        }
 }
