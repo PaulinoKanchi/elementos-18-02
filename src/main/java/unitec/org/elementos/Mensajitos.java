@@ -1,6 +1,7 @@
 package unitec.org.elementos;
 
 //import javax.persistence.Column;
+import com.vaadin.ui.TextField;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -15,7 +16,7 @@ public class Mensajitos {
     private Integer id;
     private String titulo;
     private String cuerpo;
-
+    
     public Mensajitos() {
     }
 
