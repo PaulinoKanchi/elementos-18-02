@@ -33,7 +33,7 @@ public class ElementosApplication implements CommandLineRunner{
           //System.out.println(m1.getTitulo());
           
           //actualizacion
-          repoMensa.save(new Mensajitos(4,"cuarto","cuarto"));
+          //repoMensa.save(new Mensajitos(4,"cuarto","cuarto"));
           //borrar
           //repoMensa.delete(4);
         }
